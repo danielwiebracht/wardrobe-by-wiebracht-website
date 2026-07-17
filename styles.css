@@ -3,20 +3,30 @@
 @media(max-width:850px){.site-header{height:72px}.menu-button{display:block}nav{display:none;position:absolute;top:72px;left:0;right:0;background:rgba(8,28,49,.99);padding:22px;flex-direction:column;align-items:stretch}nav.open{display:flex}.hero{min-height:700px}.hero video{object-position:60% center}.editorial-intro,.film-section,.meet,.story,.contact{grid-template-columns:1fr}.editorial-intro{gap:30px}.film-copy,.meet-copy{padding:80px 7vw}.principles,.type-grid{grid-template-columns:1fr}.principles article{border-right:0;border-bottom:1px solid var(--line)}.meet-image{min-height:450px}.story{gap:45px}.type-grid article{min-height:290px;border-right:0;border-bottom:1px solid rgba(255,255,255,.13)}footer{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero video{display:none}.hero{background:url('assets/hero-poster.jpg') center/cover}.reveal{animation:none}}
 
-.reviews{padding:120px 7vw;background:#f6f1ea;color:#0c223a}
-.reviews-heading{max-width:860px;margin:0 auto 54px;text-align:center}
-.reviews-heading h2{font-family:"Libre Caslon Display",serif;font-size:clamp(44px,5.5vw,76px);line-height:1.03;margin:16px 0 22px;font-weight:400}
-.reviews-heading>p:last-child{color:#647384;font-size:18px}
-.review-feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1240px;margin:0 auto 24px}
-.review-feature{background:#0b223b;color:#fff;padding:38px 34px;min-height:340px;display:flex;flex-direction:column;justify-content:space-between}
-.review-feature:nth-child(2){background:#c78682}.review-feature:nth-child(3){background:#fff;color:#0b223b;border:1px solid rgba(11,34,59,.14)}
-.review-feature blockquote{font-family:"Libre Caslon Display",serif;font-size:30px;line-height:1.2;margin:0}
-.review-feature p,.review-list article p{display:grid;gap:2px;margin:28px 0 0}
-.review-feature span,.review-list span{font-size:12px;color:inherit;opacity:.68;text-transform:uppercase;letter-spacing:.08em}
-.review-list{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:1240px;margin:18px auto 0;max-height:0;overflow:hidden;transition:max-height .8s ease}
-.review-list.open{max-height:3000px}
-.review-list article{background:#fff;padding:34px;border:1px solid rgba(11,34,59,.1)}
-.review-list blockquote{font-family:"Libre Caslon Display",serif;font-size:24px;line-height:1.4;margin:0;color:#172b40}
-.review-toggle{display:block;margin:32px auto 0;padding:14px 20px;background:transparent;border:1px solid #0b223b;color:#0b223b;font:600 13px/1 "DM Sans",sans-serif;cursor:pointer}
-.review-archive-note{text-align:center;color:#697786;font-size:13px;margin:24px 0 0}.review-archive-note code{font-size:12px}
-@media(max-width:900px){.review-feature-grid,.review-list{grid-template-columns:1fr}.review-feature{min-height:260px}.reviews{padding:86px 24px}}
+/* Trusted by Professionals */
+.reviews{padding:125px 7vw;background:#f6f1ea;color:var(--navy)}
+.reviews-heading{max-width:900px;margin:0 auto 64px;text-align:center}
+.reviews-heading h2{font-size:clamp(48px,6vw,82px);margin:15px 0 24px;color:var(--navy)}
+.reviews-heading>p:not(.chapter-label):not(.reviews-note){max-width:800px;margin:0 auto;color:var(--gray);font-size:18px}
+.reviews-note{margin:14px 0 0;color:#7a6870;font-size:13px;font-style:italic}
+.review-feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:1240px;margin:0 auto 88px}
+.review-feature{min-height:390px;padding:46px 42px;display:flex;flex-direction:column;justify-content:space-between;background:var(--navy);color:#fff}
+.review-feature:nth-child(2){background:#563a3e}.review-feature:nth-child(3){background:#fff;color:var(--navy);border:1px solid var(--line)}.review-feature:nth-child(4){background:#c98a84;color:#fff}
+.review-feature blockquote{font-family:"Libre Caslon Display",Georgia,serif;font-size:clamp(27px,2.6vw,39px);line-height:1.22;margin:0}
+.review-feature--long blockquote{font-size:clamp(23px,2.15vw,33px);line-height:1.24}
+.review-feature--extra-long blockquote{font-size:clamp(19px,1.75vw,27px);line-height:1.28}
+.review-feature--short blockquote{font-size:clamp(32px,3.2vw,48px);line-height:1.15}
+.review-attribution{display:grid;gap:4px;margin-top:35px}
+.review-attribution strong{font-size:14px}.review-attribution span{font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.72}
+.recommendations-heading{max-width:850px;margin:0 auto 34px;text-align:center}
+.recommendations-heading h3{font-size:clamp(34px,4vw,52px);margin:12px 0 0;color:var(--navy)}
+.review-list{max-width:1080px;margin:0 auto;border-top:1px solid var(--line)}
+.review-list article{display:none;grid-template-columns:minmax(180px,.34fr) minmax(0,.66fr);gap:52px;padding:38px 0;border-bottom:1px solid var(--line)}
+.review-list article.is-visible{display:grid}
+.review-list blockquote{font-family:"Libre Caslon Display",Georgia,serif;font-size:24px;line-height:1.42;margin:0;color:#1b3045}
+.review-list .review-attribution{margin:0;align-content:start}
+.review-toggle{display:block;margin:40px auto 0;padding:15px 22px;background:transparent;border:1px solid var(--navy);color:var(--navy);font:600 13px/1 "DM Sans",sans-serif;cursor:pointer;transition:.2s}
+.review-toggle:hover,.review-toggle:focus-visible{background:var(--navy);color:#fff}
+.review-status{text-align:center;color:var(--gray);font-size:13px;margin:28px 0 0}
+.review-status:empty{display:none}
+@media(max-width:900px){.reviews{padding:90px 24px}.review-feature-grid{grid-template-columns:1fr;margin-bottom:65px}.review-feature{min-height:290px;padding:34px 30px}.review-list article{grid-template-columns:1fr;gap:18px;padding:32px 0}.review-list blockquote{font-size:22px}}
