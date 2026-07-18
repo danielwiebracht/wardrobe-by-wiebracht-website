@@ -100,8 +100,43 @@
     </section>
 
     <section class="contact" id="contact">
-      <div class="contact-copy"><p class="chapter-label">07 · Private Consultation</p><h2>Let’s discuss what your wardrobe needs next.</h2><p>Daniel will follow up personally to arrange a convenient time and place.</p><div class="contact-links"><a href="tel:+16302220070">(630) 222-0070</a><a href="mailto:daniel@wardrobebywiebracht.com">daniel@wardrobebywiebracht.com</a><a href="https://www.facebook.com/wardrobebywiebracht" target="_blank" rel="noopener">@wardrobebywiebracht</a></div></div>
-      <form action="mailto:daniel@wardrobebywiebracht.com" method="post" enctype="text/plain"><label>Name<input name="Name" required></label><label>Email<input name="Email" type="email" required></label><label>Phone<input name="Phone" type="tel"></label><label>What would you like help with?<textarea name="Message" rows="5" required></textarea></label><button class="button button-solid" type="submit">Request a Consultation</button><small>This preview opens the visitor’s email application. A direct online form will replace it before launch.</small></form>
+      <div class="contact-copy">
+        <p class="chapter-label">07 · Private Consultation</p>
+        <h2>Let’s discuss what your wardrobe needs next.</h2>
+        <p>Daniel will follow up personally to arrange a convenient time and place.</p>
+        <div class="contact-links">
+          <a href="tel:+16302220070">(630) 222-0070</a>
+          <a href="mailto:daniel@wardrobebywiebracht.com">daniel@wardrobebywiebracht.com</a>
+          <a href="https://www.facebook.com/wardrobebywiebracht" target="_blank" rel="noopener">@wardrobebywiebracht</a>
+        </div>
+      </div>
+
+      <form action="https://formspree.io/f/xbdnoyje" method="POST">
+        <label>
+          Name
+          <input name="Name" required>
+        </label>
+
+        <label>
+          Email
+          <input name="Email" type="email" required>
+        </label>
+
+        <label>
+          Phone
+          <input name="Phone" type="tel">
+        </label>
+
+        <label>
+          What would you like help with?
+          <textarea name="Message" rows="5" required></textarea>
+        </label>
+
+        <input type="hidden" name="_subject" value="New Wardrobe by Wiebracht inquiry">
+
+        <button class="button button-solid" type="submit">Request a Consultation</button>
+        <small>Daniel will follow up personally after receiving your request.</small>
+      </form>
     </section>
   </main>
 
