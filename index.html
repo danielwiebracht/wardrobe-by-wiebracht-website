@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260721-2">
+  <link rel="stylesheet" href="styles.css?v=20260721-3">
 </head>
 <body>
   <header class="site-header">
@@ -81,13 +81,29 @@
         <p class="chapter-label">05 · Our Story</p>
         <h2>Built to last.</h2>
         <p>A film about the people, craftsmanship, factories, and values behind sixty years of Tom James—and the tradition that supports Daniel’s personal service today.</p>
-        <p class="legacy-story-note">Preview the film below. The complete 18-minute version will be added here after it is uploaded to a streaming host.</p>
-        <a class="button legacy-film-button is-pending" href="#" aria-disabled="true" onclick="return false;">Full film coming soon</a>
+        <p class="legacy-story-note">Watch the short preview, then continue to the complete film below.</p>
+        <a class="button legacy-film-button" href="#full-film">Watch the full film</a>
       </div>
       <div class="legacy-story-media">
         <video controls playsinline preload="metadata" poster="assets/tj-60th-poster.jpg">
           <source src="assets/tj-60th-trailer.mp4" type="video/mp4">
         </video>
+      </div>
+      <div class="legacy-full-film" id="full-film">
+        <div class="legacy-full-film-heading">
+          <p class="chapter-label">The Complete Film</p>
+          <h3>Built to Last: 60 Years of Tom James</h3>
+        </div>
+        <div class="legacy-full-film-player">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/DdfHAArbjIE"
+            title="Built to Last: 60 Years of Tom James"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
     </section>
 
