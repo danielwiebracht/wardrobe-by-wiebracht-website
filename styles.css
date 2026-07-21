@@ -65,3 +65,37 @@
 @media(max-width:850px){
   .legacy-story{grid-template-columns:1fr;padding:86px 24px;gap:42px}
 }
+
+
+/* Our Story layout reinforcement */
+.legacy-story{
+  display:grid!important;
+  grid-template-columns:minmax(320px,.42fr) minmax(520px,.58fr)!important;
+  column-gap:clamp(42px,6vw,96px)!important;
+  align-items:center!important;
+  padding:120px 7vw!important;
+}
+.legacy-story-copy{
+  min-width:0;
+}
+.legacy-story-copy h2{
+  font-size:clamp(56px,6vw,86px)!important;
+  line-height:.98!important;
+  margin:0 0 28px!important;
+}
+.legacy-story-media{
+  width:100%;
+  min-width:0;
+}
+.legacy-story-media video{
+  width:100%!important;
+  height:auto!important;
+  aspect-ratio:16/9;
+  object-fit:cover;
+}
+@media(max-width:980px){
+  .legacy-story{
+    grid-template-columns:1fr!important;
+    row-gap:42px!important;
+  }
+}
