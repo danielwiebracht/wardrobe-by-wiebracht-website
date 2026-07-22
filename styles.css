@@ -150,3 +150,153 @@
     margin-top:12px;
   }
 }
+
+
+/* Tom James collection bridge */
+.collection-bridge{
+  padding:120px 7vw;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:clamp(48px,7vw,110px);
+  align-items:center;
+  background:#fff;
+}
+.collection-bridge-copy{
+  max-width:760px;
+}
+.collection-bridge h2{
+  font-size:clamp(46px,5.5vw,76px);
+  margin:14px 0 24px;
+  color:var(--navy);
+}
+.collection-bridge-copy>p{
+  color:var(--gray);
+  font-size:18px;
+}
+.collection-button{
+  margin-top:22px;
+  background:var(--navy);
+  color:#fff;
+  gap:12px;
+}
+.collection-disclaimer{
+  margin-top:15px!important;
+  font-size:12px!important;
+}
+.collection-bridge-panel{
+  min-height:470px;
+  padding:52px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  color:#fff;
+  background:
+    linear-gradient(145deg,rgba(8,28,49,.15),rgba(8,28,49,.86)),
+    linear-gradient(135deg,#78545a 0%,#172f48 52%,#081c31 100%);
+  box-shadow:0 30px 80px rgba(8,28,49,.16);
+}
+.collection-bridge-panel p{
+  margin:0;
+  padding:18px 0;
+  border-bottom:1px solid rgba(255,255,255,.22);
+  font:400 clamp(30px,3.5vw,52px)/1.05 "Libre Caslon Display",Georgia,serif;
+}
+.collection-bridge-panel span{
+  margin-top:30px;
+  font-size:11px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#dfaaa5;
+}
+
+/* Footer links */
+footer{
+  grid-template-columns:1fr auto!important;
+}
+.footer-brand p{
+  margin-top:14px;
+}
+.footer-links{
+  display:flex;
+  gap:24px;
+  align-items:center;
+  justify-content:flex-end;
+  flex-wrap:wrap;
+}
+.footer-links a{
+  color:#d6dee5;
+  font-size:12px;
+  text-decoration:none;
+}
+.footer-links a:hover{
+  color:#fff;
+}
+.footer-copyright{
+  grid-column:1 / -1;
+}
+
+/* Privacy policy page */
+.privacy-page{
+  background:var(--paper);
+}
+.privacy-header{
+  position:relative;
+  height:auto;
+  min-height:86px;
+  background:var(--navy);
+}
+.privacy-main{
+  width:min(900px,88vw);
+  margin:0 auto;
+  padding:150px 0 110px;
+}
+.privacy-main .chapter-label{
+  margin-bottom:14px;
+}
+.privacy-main h1{
+  margin:0 0 28px;
+  color:var(--navy);
+  font-size:clamp(54px,7vw,88px);
+}
+.privacy-intro{
+  color:var(--gray);
+  font-size:19px;
+  max-width:760px;
+  margin-bottom:64px;
+}
+.privacy-section{
+  padding:32px 0;
+  border-top:1px solid var(--line);
+}
+.privacy-section h2{
+  margin:0 0 14px;
+  color:var(--navy);
+  font-size:34px;
+}
+.privacy-section p,
+.privacy-section li{
+  color:#4f6070;
+}
+.privacy-section ul{
+  padding-left:22px;
+}
+.privacy-back{
+  display:inline-flex;
+  margin-top:40px;
+  color:var(--navy);
+  font-weight:600;
+  text-decoration:none;
+}
+@media(max-width:850px){
+  .collection-bridge{
+    grid-template-columns:1fr;
+    padding:86px 24px;
+  }
+  .collection-bridge-panel{
+    min-height:350px;
+    padding:34px;
+  }
+  .footer-links{
+    justify-content:flex-start;
+  }
+}
